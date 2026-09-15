@@ -1,0 +1,305 @@
+/* ==========================================================
+   Serengeti Pride Safaris — Responsive overrides
+   Breakpoints: 1440 desktop / 1280 laptop / 1024 small laptop /
+   768 tablet / 576 large mobile / 425 mobile / 375 small mobile
+   ========================================================== */
+
+/* ---------- ≤1280px (laptop) ---------- */
+@media (max-width: 1280px) {
+  .partners-grid {
+    grid-template-columns: repeat(6, 1fr);
+    gap: 14px;
+  }
+}
+
+/* ---------- ≤1024px (small laptop) ---------- */
+@media (max-width: 1024px) {
+  .why-split {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+  .why-visual {
+    position: static;
+  }
+  .why-visual img {
+    height: 380px;
+  }
+  .hero-grid,
+  .gateway-grid,
+  .why-intro,
+  .quote-inner,
+  .offer-grid {
+    grid-template-columns: 1fr;
+  }
+  .why-cards-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .quick-form-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .hero-arrow {
+    width: 46px;
+    height: 46px;
+  }
+  .hero-arrow .icon {
+    width: 18px;
+    height: 18px;
+  }
+  .hero-arrow-prev {
+    left: 14px;
+  }
+  .hero-arrow-next {
+    right: 14px;
+  }
+  .pack-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .partners-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .testi-card {
+    flex: 0 0 calc(50% - 11px);
+  }
+  .steps-grid {
+    grid-template-columns: 1fr;
+  }
+  .nav-links,
+  .nav-cta {
+    display: none;
+  }
+  .burger {
+    display: flex;
+  }
+}
+
+/* ---------- ≤768px (tablet) ---------- */
+@media (max-width: 768px) {
+  section {
+    padding: 72px 0;
+  }
+  .faq-q {
+    padding: 16px 18px;
+    font-size: 14.5px;
+  }
+  .faq-a {
+    padding: 0 18px;
+  }
+  .faq-a p {
+    font-size: 13.5px;
+  }
+  .quick-form-grid {
+    gap: 32px;
+  }
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+  .pack-grid,
+  .steps-grid {
+    grid-template-columns: 1fr;
+  }
+  .foot-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 28px;
+  }
+  .testi-card {
+    flex: 0 0 calc(100% - 0px);
+  }
+  .offer-section {
+    padding: 40px 28px;
+  }
+  .partners-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .hero {
+    padding: 128px 0 64px;
+  }
+  .hero-visual img {
+    height: 320px;
+  }
+  .ph-img {
+    height: 300px;
+  }
+  .quote-form-card,
+  .quick-form-card {
+    padding: 26px;
+  }
+}
+
+/* ---------- ≤576px (large mobile) ---------- */
+@media (max-width: 576px) {
+  .foot-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .partners-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .hero-stats {
+    gap: 18px;
+  }
+  .hero-fullscreen {
+    min-height: 85vh;
+  }
+  .hero-content {
+    margin-top: 0;
+  }
+  .quick-about-visual img {
+    height: 220px;
+  }
+  .quick-about-highlights {
+    grid-template-columns: 1fr;
+  }
+  .hero-fullscreen h1 {
+    font-size: 34px;
+  }
+  .hero-title-editorial {
+    font-size: 38px;
+  }
+  .hero-fullscreen .cta-row {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .hero-fullscreen .cta-row .btn {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+  }
+  .hero-arrow {
+    width: 38px;
+    height: 38px;
+  }
+  .hero-arrow .icon {
+    width: 16px;
+    height: 16px;
+  }
+  .hero-dots {
+    bottom: 18px;
+  }
+  .dest-card {
+    flex-basis: 210px;
+  }
+  .why-cards-grid {
+    grid-template-columns: 1fr;
+  }
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+  .why-intro-visual img {
+    height: 240px;
+  }
+  .stamp {
+    width: 90px;
+    height: 90px;
+    font-size: 10.5px;
+    bottom: -18px;
+    left: -14px;
+  }
+}
+
+/* ---------- footer stacking (tablet down) ---------- */
+@media (max-width: 768px) {
+  .foot-grid {
+    gap: 36px 28px;
+  }
+}
+@media (max-width: 576px) {
+  .foot-grid {
+    grid-template-columns: 1fr;
+    gap: 34px;
+  }
+  .foot-desc {
+    max-width: none;
+  }
+  .foot-bottom {
+    flex-direction: column;
+    text-align: left;
+    gap: 8px;
+  }
+}
+
+/* ---------- ≤425px (mobile) ---------- */
+@media (max-width: 425px) {
+  .nav {
+    padding: 16px 18px;
+  }
+  .logo {
+    padding: 6px 10px;
+  }
+  .logo img {
+    height: 44px;
+  }
+  .site-header.scrolled .logo img {
+    height: 38px;
+  }
+  .mobile-drawer {
+    width: 100%;
+    max-width: 340px;
+  }
+  .cta-row {
+    gap: 10px;
+  }
+  .cta-row .btn {
+    flex: 1 1 100%;
+  }
+  .hero-stats {
+    gap: 14px;
+  }
+  .hero-stats div {
+    padding-left: 10px;
+  }
+  .foot-grid {
+    grid-template-columns: 1fr;
+  }
+  .offer-section {
+    padding: 30px 20px;
+    border-radius: 20px;
+  }
+  .countdown {
+    flex-wrap: wrap;
+  }
+  .countdown div {
+    min-width: 56px;
+    padding: 8px 10px;
+  }
+  .dest-card {
+    flex-basis: 78vw;
+  }
+  .quote-badges span {
+    font-size: 11px;
+    padding: 7px 12px;
+  }
+}
+
+/* ---------- ≤375px (small mobile) ---------- */
+@media (max-width: 375px) {
+  .wrap {
+    padding: 0 16px;
+  }
+  .hero h1 {
+    font-size: 30px;
+  }
+  .hero-fullscreen h1 {
+    font-size: 32px;
+  }
+  .hero-title-editorial {
+    font-size: 30px;
+  }
+  .section-title {
+    font-size: 26px;
+  }
+  .btn {
+    padding: 13px 22px;
+    font-size: 13.5px;
+  }
+  .pack-body,
+  .quick-form-card,
+  .quote-form-card {
+    padding: 20px;
+  }
+  .partners-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
