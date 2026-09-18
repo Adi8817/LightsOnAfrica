@@ -11,7 +11,7 @@
   --green: #6ba53a;
   --green-dark: #4e8129;
   /* --sunset: #e8792b; */
-  --sunset: #d0972c;
+  --sunset: #fcc117;
   --sunset-dark: #d0972c;
   --gold: #f0b429;
   --cream: #fbf6ec;
@@ -204,13 +204,14 @@ button {
   left: 0;
   right: 0;
   z-index: 1000;
-  background: #123D2B;
+  background: #5C0404;
   border-bottom: 1px solid rgba(244, 179, 33, 0.22);
   backdrop-filter: blur(10px);
   transition: box-shadow 0.35s ease, background 0.35s ease, padding 0.35s ease;
 }
 .site-header.scrolled {
-  background: #123D2B;
+  /* background: #123D2B; */
+  background: #5C0404;
   box-shadow: 0 10px 30px -14px rgba(0, 0, 0, 0.45);
 }
 .nav {
@@ -279,7 +280,8 @@ button {
   width: 100%;
 }
 .nav-links a.active {
-  color: #F4B321;
+  /* color: #F4B321; */
+   color: #fcc117;
 }
 .nav-cta {
   display: flex;
@@ -291,7 +293,8 @@ button {
   font-size: 13px;
 }
 .nav-cta .btn-form {
-  background: #E97825;
+  /* background: #E97825; */
+  background: var(--sunset);
   box-shadow: 0 8px 20px -10px rgba(233, 120, 37, 0.5);
 }
 .nav-cta .btn-form:hover {
@@ -1497,6 +1500,7 @@ section {
   margin: 10px 0 10px;
   padding-top: 10px;
   border-top: 1px solid rgba(18, 61, 43, 0.1);
+  font-weight: 700;
 }
 .why-cta {
   display: inline-flex;
