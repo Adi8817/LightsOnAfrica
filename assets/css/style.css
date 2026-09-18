@@ -1492,8 +1492,10 @@ section {
   max-width: 540px;
 }
 .why-trusted {
-  font-size: 13px;
+  font-size: 15px;
   color: var(--ink-soft);
+  /* color: var(--ink-soft); */
+  color:#5c0404;
   opacity: 0.85;
   font-style: italic;
   letter-spacing: 0.2px;
