@@ -1881,7 +1881,8 @@ section {
 /* ---------- Footer ---------- */
 .site-footer {
   position: relative;
-  background: var(--forest-3);
+  /* background: var(--forest-3); */
+  background: #4a0303;
   color: #c9d5c1;
   padding: 76px 0 26px;
 }
